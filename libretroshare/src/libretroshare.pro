@@ -112,7 +112,13 @@ PUBLIC_HEADERS =	retroshare/rsdisc.h \
 HEADERS += plugins/pluginmanager.h \
 		plugins/dlfcn_win32.h \
 		serialiser/rspluginitems.h \
-    util/rsinitedptr.h
+    util/rsinitedptr.h \
+    serialiser/new_baseserial.h \
+    serialiser/new_operations.h \
+    serialiser/new_item.h \
+    serialiser/new_serialtypebase.h \
+    serialiser/new_tlvbase.h \
+    serialiser/new_RsItem.h
 
 HEADERS += $$PUBLIC_HEADERS
 
@@ -501,7 +507,10 @@ SOURCES +=	dbase/cachestrapper.cc \
 			dbase/fimonitor.cc \
 			dbase/findex.cc \
 			dbase/fistore.cc \
-			dbase/rsexpr.cc
+			dbase/rsexpr.cc \
+    serialiser/new_item.cc \
+    serialiser/new_serialtypebase.cc \
+    serialiser/new_baseserial.cc
 
 
 SOURCES +=	ft/ftchunkmap.cc \
