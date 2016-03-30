@@ -63,12 +63,14 @@
             height: unset
             //background-color: lime
         &.from
-            position: absolute
+            float: left
             width: $author_width
             top: 10px
             left: 0px
             color: white
             text-align: right
+            margin-right: 5px
+            word-wrap: break-word
         &.when
             float: right
             color: lightgray
@@ -79,3 +81,5 @@
             left: $author_width
             white-space: pre-wrap
             height: initial
+        &.last
+            clear: left

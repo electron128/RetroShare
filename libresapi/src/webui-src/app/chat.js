@@ -11,6 +11,7 @@ function dspmsg(from, when, text){
         m(".chat.msg.from", from),
         m(".chat.msg.when", when),
         m(".chat.msg.text", text),
+        m(".chat.msg.last"),
     ]);
 }
 

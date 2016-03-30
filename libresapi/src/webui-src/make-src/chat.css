@@ -53,12 +53,14 @@
       padding: 10px;
       height: unset; }
     .chat.msg.from {
-      position: absolute;
+      float: left;
       width: 100px;
       top: 10px;
       left: 0px;
       color: white;
-      text-align: right; }
+      text-align: right;
+      margin-right: 5px;
+      word-wrap: break-word; }
     .chat.msg.when {
       float: right;
       color: lightgray;
@@ -69,4 +71,6 @@
       left: 100px;
       white-space: pre-wrap;
       height: initial; }
+    .chat.msg.last {
+      clear: left; }
 
